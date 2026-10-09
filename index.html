@@ -1,47 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="Home-style.css">
-
-<link rel = "icon" href = "ppfav.png" type = "image/png">
-
+<title>Home | Peter Scrandis</title>
+<meta name="description" content="Personal website of Peter Scrandis">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<title>
-  Menu
-</title>
-
-<h1>
-<img src="UMBCvert.png" alt="UMBC Logo" style="width:39px;height:60px;">
-  Menu Page
-</h1>
-
-<h2>
-<div class="grid-container">
-  <div class="grid-item-about">
-    <a href="About.htm">
-      <img src="pointing.webp" alt="Some woman pointing at herself" class="image-about">
-      <div class="overlay-about">
-        <div class="text">About me</div>
-      </div>
-    </a>
-  </div>
-  <div class="grid-item-assignment">
-    <a href="https://docs.google.com/document/d/1fPWZZlQVBnO39-y1BgnRR7deWkTydZmPf9e2-wSoJuc/edit?usp=sharing" target="_blank">
-      <img src="homework.png" alt="some guy crushed by books" class="image-homework"><br>
-      <div class="overlay-homework">
-        <div class="text">Assignment</div>
-      </div>
-    </a>
-  </div>
+<header><nav aria-label="Main">
+<a class="brand" href="index.html">Peter Scrandis</a>
+<button class="toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul class="links" id="menu"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="resume.html">Resume</a></li><li><a href="contact.html">Contact</a></li></ul>
+</nav></header>
+<main>
+<div class="prose">
+<h1>Hi, I'm Peter Scrandis.</h1>
+<p class="lead">I'm a Software Developer at Naval Surface Warfare Center, Carterock. I develop and maintain a physics based simulation tool to predict the controls and maneuvering of different classes of under sea systems. Currently focused on [topic or goal].</p>
+<a class="btn" href="projects.html">See my projects</a>
+<a class="btn alt" href="resume.html">Read my resume</a>
 </div>
-
+</main>
+<footer>&copy; <span id="y"></span> Peter Scrandis. Hosted on GitLab Pages. Developed with AI</footer>
+<script src="script.js"></script>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
-
-<!--
-  inspiration
-  https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp
--->
