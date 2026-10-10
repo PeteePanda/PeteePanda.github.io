@@ -35,3 +35,15 @@ footer{max-width:60rem;margin:0 auto;padding:1.5rem 1.25rem 3rem;color:var(--mut
  .links.open{display:flex}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.tool{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.5rem;margin-top:2rem;align-items:start}
+.drop{display:flex;align-items:center;justify-content:center;min-height:18rem;border:2px dashed var(--line);border-radius:.4rem;background:var(--surface);cursor:pointer;overflow:hidden;color:var(--muted);font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:600;position:relative}
+.drop:hover,.drop.over,.drop:focus-within{border-color:var(--accent)}
+.drop input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.drop input:disabled{cursor:not-allowed}
+.drop img{max-width:100%;max-height:22rem;display:block}
+.guess{font:800 2rem/1.1 "Bricolage Grotesque",Arial,sans-serif;margin:.5rem 0 1rem}
+.bars{list-style:none;margin:0;padding:0}
+.bars li{margin:0 0 .6rem;font-size:.95rem}
+.bars .row{display:flex;justify-content:space-between;font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:600}
+.bars .track{height:.6rem;background:var(--line);border-radius:99px;overflow:hidden}
+.bars .fill{height:100%;background:var(--accent)}
