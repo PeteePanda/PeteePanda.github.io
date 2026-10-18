@@ -23,7 +23,7 @@ h3{font-size:1.15rem;margin:0 0 .25rem}
 .btn{display:inline-block;margin:.5rem .5rem 0 0;padding:.65rem 1.2rem;border-radius:.4rem;font-weight:700;text-decoration:none;background:var(--accent);color:var(--accent-ink)}
 .btn.alt{background:none;color:var(--ink);border:2px solid var(--line)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));gap:1.25rem;margin-top:1.5rem}
-.card{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--line);border-radius:.4rem;padding:1.25rem}
+.card{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--line);border-right:5px solid var(--line);border-radius:.4rem;padding:1.25rem}
 .card p{margin:.5rem 0 .75rem;font-size:.98rem}
 .tag{display:inline-block;margin:0 .3rem .3rem 0;padding:.1rem .6rem;border-radius:99px;background:var(--bg);border:1px solid var(--line);font-size:.8rem;color:var(--muted)}
 .job{padding:1.25rem 0;border-top:1px solid var(--line)}
@@ -59,8 +59,21 @@ hr{border:0;border-top:1px solid var(--line)}
   .right-img{float:none;width:100%;max-width:16rem;margin:0 auto 1.5rem}
   .left-img {float:none;width:100%;max-width:16rem;margin:0 auto 1.5rem}
 }
+.paper{max-width:44rem}
+.paper .byline{color:var(--muted);font-family:"Bricolage Grotesque",Arial,sans-serif;font-size:1.15rem;margin:0 0 2rem}
+.paper h1{font-size:clamp(2rem,6vw,3.2rem)}
+.paper p{margin:0 0 1.1rem}
+.paper figure{margin:1.75rem 0;text-align:center}
+.paper figure img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:.4rem;background:#fff}
+.paper sup a{text-decoration:none;font-weight:700}
+.footnotes{margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
+.footnotes ol{padding-left:1.25rem}
+.footnotes li{margin-bottom:.5rem;overflow-wrap:anywhere}
+.paper .refs{padding-left:0;list-style:none}
+.paper .refs li{margin-bottom:.9rem;overflow-wrap:anywhere}
 main img:not(#preview) { cursor: zoom-in; }
 .lightbox {width: 100vw;height: 100vh;max-width: none;max-height: none;padding: 0;border: 0;background: transparent;}
 .lightbox[open] { display: flex; align-items: center; justify-content: center; }
 .lightbox::backdrop { background: rgba(0, 0, 0, 0.9); }
 .lightbox img {max-width: 96vw;max-height: 96vh;object-fit: contain;cursor: zoom-out;}
+
