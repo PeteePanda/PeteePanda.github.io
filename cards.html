@@ -3,32 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Saved links</title>
+<title>About | Peter Scrandis</title>
+<meta name="description" content="Personal website of Peter Scrandis">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family:system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:2rem 1rem">
+<body>
+<header><nav aria-label="Main">
+<a class="brand" href="index.html">Peter Scrandis</a>
+<button class="toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul class="links" id="menu">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="cards.html" aria-current="page">Things I Want</a></li>
+  <li><a href="resume.html">Resume</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav></header>
+<main>
+<div class="prose">
+
 <h1>Saved links</h1>
-<!-- CARDS:START -->
-<style>
-.link-cards{--lc-bg:#1e1e2e;--lc-ink:#89b4fa;--lc-muted:#a6e3a1;--lc-line:#a6e3a1;--lc-accent:#a6e3a1;
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));gap:1.25rem;margin:1.5rem 0}
-@media (prefers-color-scheme:dark){.link-cards{--lc-bg:#1e1e2e;--lc-ink:#89b4fa;--lc-muted:#9aa6c2;--lc-line:#a6e3a1;--lc-accent:#a6e6a1}}
-.link-cards .lc-card{display:flex;flex-direction:column;background:var(--lc-bg);color:var(--lc-ink);
-  border:1px solid var(--lc-line);border-radius:.5rem;overflow:hidden}
-.link-cards .lc-thumb{display:block;aspect-ratio:4/3;background:var(--lc-line)}
-.link-cards .lc-thumb img{width:100%;height:100%;object-fit:cover;display:block}
-.link-cards .lc-body{padding:1rem;display:flex;flex-direction:column;gap:.4rem}
-.link-cards h3{margin:0;font-size:1.05rem;line-height:1.3}
-.link-cards h3 a{color:inherit;text-decoration:none}
-.link-cards h3 a:hover{color:var(--lc-accent);text-decoration:underline}
-.link-cards .lc-price{margin:0;font-weight:700;color:var(--lc-accent)}
-.link-cards .lc-details{margin:0;font-size:.92rem;color:var(--lc-muted)}
-</style>
 <section class="link-cards">
 <article class="lc-card"><div class="lc-body"><h3><a href="https://www.mieleusa.com/product/11181020/canister-vacuum-cleaners-classic-c1-pure-suction-powerline-sban0-graphite-grey" target="_blank" rel="noopener noreferrer">Classic C1 Pure Suction PowerLine - SBAN0 Graphite grey</a></h3><p class="lc-price">399</p><p class="lc-details">This is a high priority item on my christmas list. I would use this for all of my vacuum needs instead of the half baked hand vacuums</p></div></article>
 <article class="lc-card"><div class="lc-body"><h3><a href="https://www.mieleusa.com/product/11181020/canister-vacuum-cleaners-classic-c1-pure-suction-powerline-sban0-graphite-grey" target="_blank" rel="noopener noreferrer">Classic C1 Pure Suction PowerLine - SBAN0 Graphite grey</a></h3><p class="lc-price">399</p><p class="lc-details">This is a high priority item on my christmas list. I would use this for all of my vacuum needs instead of the half baked hand vacuums</p></div></article>
 <article class="lc-card"><div class="lc-body"><h3><a href="https://www.mieleusa.com/product/11181020/canister-vacuum-cleaners-classic-c1-pure-suction-powerline-sban0-graphite-grey" target="_blank" rel="noopener noreferrer">Classic C1 Pure Suction PowerLine - SBAN0 Graphite grey</a></h3><p class="lc-price">399</p><p class="lc-details">This is a high priority item on my christmas list. I would use this for all of my vacuum needs instead of the half baked hand vacuums</p></div></article>
 <article class="lc-card"><a class="lc-thumb" href="https://www.keychron.com/products/keychron-k1-ultra-8k-wireless-custom-mechanical-keyboard" target="_blank" rel="noopener noreferrer"><img src="images/cards/item_1.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"></a><div class="lc-body"><h3><a href="https://www.keychron.com/products/keychron-k1-ultra-8k-wireless-custom-mechanical-keyboard" target="_blank" rel="noopener noreferrer">Keychron K1 Ultra 8K Wireless Custom Mechanical Keyboard</a></h3><p class="lc-price">109.99 USD</p><p class="lc-details">Keychron K1 Ultra 8K is a TKL wireless mechanical keyboard featuring tri-mode connectivity, hot-swappable keys, an 8K polling rate, and 490-hour battery life.</p></div></article>
 </section>
-<!-- CARDS:END -->
+</div>
+</main>
+<footer>&copy; <span id="y"></span> Peter Scrandis. Hosted on GitHub Pages. Developed with AI</footer>
+<script src="script.js"></script>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
